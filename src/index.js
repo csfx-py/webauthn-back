@@ -70,5 +70,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`listening at http://${require("ip").address()}:${PORT}`);
+  console.log(`listening at http://localhosts:${PORT}`);
 });
