@@ -14,7 +14,7 @@ const WebAuthn = require("webauthn");
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://webauthn-front.vercel.app"],
     credentials: true,
   })
 );
@@ -31,7 +31,7 @@ app.use(
 );
 
 const webauthn = new WebAuthn({
-  origin: "http://localhost:3000",
+  origin: "https://webauthn-front.vercel.app",
   usernameField: "username",
   userFields: {
     username: "username",
